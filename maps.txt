@@ -1,0 +1,100 @@
+frontend/src/pages/TableManagement.tsx:      setTables(prev => prev.map(t => (t.id === id || (t as any)._id === id) ? response.data : t));
+frontend/src/pages/TableManagement.tsx:        setTables(prev => prev.map(t => (t.id === editingTable.id || (t as any)._id === (editingTable as any)._id) ? response.data : t));
+frontend/src/pages/TableManagement.tsx:            {(['All', 'Available', 'Occupied', 'Reserved', 'Cleaning'] as const).map((status) => (
+frontend/src/pages/TableManagement.tsx:          {filteredTables.map((table, idx) => (
+frontend/src/pages/Analytics.tsx:      ...(salesData.categorySales || []).map((cat: any) => [cat.name, `${cat.value}%`]),
+frontend/src/pages/Analytics.tsx:      ...popularItems.map(item => [item.name, item.sold, `$${item.revenue.toFixed(2)}`]),
+frontend/src/pages/Analytics.tsx:    const csvContent = csvRows.map(row => row.join(",")).join("\n");
+frontend/src/pages/Analytics.tsx:        ...(salesData.categorySales || []).map((cat: any) => [cat.name, cat.value / 100]),
+frontend/src/pages/Analytics.tsx:        ...popularItems.map(item => [item.name, item.sold, item.revenue]),
+frontend/src/pages/Analytics.tsx:        ...staffPerformance.map(staff => [staff.name, staff.orders, staff.revenue, staff.performance]),
+frontend/src/pages/Analytics.tsx:          {['analytics.last7Days', 'analytics.thisMonth', 'analytics.lastMonth', 'analytics.custom'].map(range => (
+frontend/src/pages/Analytics.tsx:                  {(salesData?.categorySales || CATEGORY_DATA).map((entry: any, index: number) => (
+frontend/src/pages/Analytics.tsx:            {(salesData?.categorySales || CATEGORY_DATA).map((item: any, idx: number) => (
+frontend/src/pages/Analytics.tsx:              popularItems.map((item, idx) => (
+frontend/src/pages/Analytics.tsx:              staffPerformance.map((staff, idx) => (
+frontend/src/pages/Locations.tsx:          {locations.map((loc, idx) => (
+frontend/src/pages/CustomerManagement.tsx:                filteredCustomers.map((customer, idx) => (
+frontend/src/pages/Checkout.tsx:        items: cart.map(item => ({
+frontend/src/pages/Checkout.tsx:      items: cart.map(item => ({
+frontend/src/pages/Checkout.tsx:                    {['01', '02', '03', '04', '05'].map(t => (
+frontend/src/pages/Checkout.tsx:              {PAYMENT_TABS.map(tab => (
+frontend/src/pages/Checkout.tsx:                  cart.map((item, idx) => (
+frontend/src/pages/Checkout.tsx:                          {item.selectedModifiers.length > 0 && ` • ${item.selectedModifiers.map(m => m.name).join(', ')}`}
+frontend/src/pages/Settings.tsx:          {TABS.map(tab => (
+frontend/src/pages/LocationManagement.tsx:        {filteredLocations.map((loc, idx) => (
+frontend/src/pages/CustomerMenu.tsx:    const cartItemId = `${item.id}-${variant?.id || 'base'}-${modifiers.map(m => m.id).sort().join('-')}-${Object.values(customizations).sort().join('-')}`;
+frontend/src/pages/CustomerMenu.tsx:        return prev.map(i => i.id === cartItemId ? { ...i, quantity: i.quantity + 1 } : i);
+frontend/src/pages/CustomerMenu.tsx:    setCart(prev => prev.map(i => {
+frontend/src/pages/CustomerMenu.tsx:                ].map(cat => (
+frontend/src/pages/CustomerMenu.tsx:          ].map(cat => (
+frontend/src/pages/CustomerMenu.tsx:          ].map(cat => (
+frontend/src/pages/CustomerMenu.tsx:            {filteredItems.filter(i => i.category === 'Coffee').map((item, idx) => (
+frontend/src/pages/CustomerMenu.tsx:            {filteredItems.filter(i => i.category === 'Tea').map((item, idx) => (
+frontend/src/pages/CustomerMenu.tsx:            {filteredItems.filter(i => i.category === 'Bakery').map((item, idx) => (
+frontend/src/pages/CustomerMenu.tsx:            {filteredItems.filter(i => i.category === 'Savory').map((item, idx) => (
+frontend/src/pages/CustomerMenu.tsx:            {filteredItems.filter(i => i.category === 'Smoothie').map((item, idx) => (
+frontend/src/pages/CustomerMenu.tsx:            cart.map((item: any, idx: number) => (
+frontend/src/pages/CustomerMenu.tsx:                        + {item.selectedModifiers.map((m: any) => m.name).join(', ')}
+frontend/src/pages/CustomerMenu.tsx:              ? `$${Math.min(...item.variants.map(v => v.price)).toFixed(2)}`
+frontend/src/pages/CustomerMenu.tsx:                  {REWARDS.map((reward, idx) => (
+frontend/src/pages/CustomerMenu.tsx:                {item.variants.map((v, idx) => (
+frontend/src/pages/CustomerMenu.tsx:                  {['0%', '50%', '100%'].map(level => (
+frontend/src/pages/CustomerMenu.tsx:                  ].map(level => (
+frontend/src/pages/CustomerMenu.tsx:                {displayModifiers.map((m, idx) => (
+frontend/src/pages/OrderStatus.tsx:              {myOrders.map((order: any, idx) => (
+frontend/src/pages/OrderStatus.tsx:              {STATUS_STEPS.map((step, index) => (
+frontend/src/pages/OrderStatus.tsx:                {order.items.map((item, idx) => (
+frontend/src/pages/StaffDashboard.tsx:      setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
+frontend/src/pages/StaffDashboard.tsx:      setNotifications(prev => prev.map(n => ({ ...n, read: true })));
+frontend/src/pages/StaffDashboard.tsx:      setOrders(prev => prev.map(o => (o.id === id || (o as any)._id === id) ? response.data : o));
+frontend/src/pages/StaffDashboard.tsx:      setOrders(prev => prev.map(o => (o.id === id || (o as any)._id === id) ? response.data : o));
+frontend/src/pages/StaffDashboard.tsx:      setRedemptions(prev => prev.map(r => (r.id === id || (r as any)._id === id) ? response.data : r));
+frontend/src/pages/StaffDashboard.tsx:                {locations.map((loc, idx) => (
+frontend/src/pages/StaffDashboard.tsx:                      {['All', 'Pending', 'Preparing', 'Ready', 'Completed'].map(f => (
+frontend/src/pages/StaffDashboard.tsx:                  {filteredOrders.map((order, idx) => (
+frontend/src/pages/StaffDashboard.tsx:                    .map((redemption, idx) => (
+frontend/src/pages/StaffDashboard.tsx:            {order.items.map((item, i) => (
+frontend/src/pages/StaffDashboard.tsx:                  {item.selectedModifiers?.map((m, mIdx) => (
+frontend/src/pages/StaffDashboard.tsx:                  {item.customizations && Object.entries(item.customizations).map(([key, value], cIdx) => (
+frontend/src/pages/MenuManagement.tsx:      setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
+frontend/src/pages/MenuManagement.tsx:      setNotifications(prev => prev.map(n => ({ ...n, read: true })));
+frontend/src/pages/MenuManagement.tsx:      const updated = menuItems.map(i => i.id === item.id ? response.data : i);
+frontend/src/pages/MenuManagement.tsx:        const updated = menuItems.map(i => i.id === formData.id ? response.data : i);
+frontend/src/pages/MenuManagement.tsx:      const updated = menuItems.map(i => i.id === selectedItem.id ? response.data : i);
+frontend/src/pages/MenuManagement.tsx:              {[t('menu.allItems'), ...CATEGORIES].map((filter, i) => (
+frontend/src/pages/MenuManagement.tsx:                {filteredItems.map((item, idx) => (
+frontend/src/pages/MenuManagement.tsx:                    {CATEGORIES.map((cat: string) => <option key={cat} value={cat}>{t(`inventory.category${cat}` as any)}</option>)}
+frontend/src/pages/MenuManagement.tsx:                      const updatedVariants = selectedItem.variants?.map(v => {
+frontend/src/pages/MenuManagement.tsx:                        const newVariants = selectedItem.variants?.map(v => ({ ...v, price: selectedItem.price }));
+frontend/src/pages/MenuManagement.tsx:                  {selectedItem.variants?.map((variant, idx) => (
+frontend/src/pages/MenuManagement.tsx:                  {selectedItem.modifiers?.map((mod, idx) => (
+frontend/src/pages/MenuManagement.tsx:                      {CATEGORIES.map(cat => <option key={cat} value={cat}>{t(`inventory.category${cat}` as any)}</option>)}
+frontend/src/pages/MenuManagement.tsx:                        const updatedVariants = formData.variants?.map(v => {
+frontend/src/pages/EmployeeManagement.tsx:        const updatedEmployees = employees.map(e => e.id === formData.id ? updatedEmployee : e);
+frontend/src/pages/EmployeeManagement.tsx:            {['All', 'barista', 'manager', 'cashier'].map(filter => (
+frontend/src/pages/EmployeeManagement.tsx:              Array.from({ length: 5 }).map((_, i) => (
+frontend/src/pages/EmployeeManagement.tsx:            ) : filteredEmployees.map((emp, idx) => (
+frontend/src/pages/EmployeeManagement.tsx:                  {['Profile', 'Schedule', 'Permissions'].map(tab => (
+frontend/src/pages/EmployeeManagement.tsx:                        {(selectedEmployee.schedule || DEFAULT_SCHEDULE).map((item, idx) => (
+frontend/src/pages/EmployeeManagement.tsx:                        {Object.entries(selectedEmployee.permissions || DEFAULT_PERMISSIONS).map(([key, value], idx) => (
+frontend/src/pages/EmployeeManagement.tsx:                {['general', 'schedule', 'permissions'].map((tab) => (
+frontend/src/pages/EmployeeManagement.tsx:                    {formData.schedule?.map((item, index) => (
+frontend/src/pages/EmployeeManagement.tsx:                    {Object.entries(formData.permissions || {}).map(([key, value], idx) => (
+frontend/src/pages/InventoryManagement.tsx:    const rows = inventory.map(item => [
+frontend/src/pages/InventoryManagement.tsx:    const csvContent = [headers, ...rows].map(row => row.join(",")).join("\n");
+frontend/src/pages/InventoryManagement.tsx:        ...inventory.map(i => [i.name, i.category, i.quantity, i.unit, i.status, i.sku, i.supplier || '', i.threshold])
+frontend/src/pages/InventoryManagement.tsx:        ...logs.map(l => [
+frontend/src/pages/InventoryManagement.tsx:        setInventory(prev => prev.map(item => item.id === editingItem.id ? response.data : item));
+frontend/src/pages/InventoryManagement.tsx:      setInventory(prev => prev.map(item => item.id === adjustingItem.id ? response.data : item));
+frontend/src/pages/InventoryManagement.tsx:                    {CATEGORIES(t).map((cat: string, i: number) => <option key={`cat-${i}-${cat}`} value={cat}>{cat}</option>)}
+frontend/src/pages/InventoryManagement.tsx:                    {STATUSES(t).map((status: string, i: number) => <option key={`status-${i}-${status}`} value={status}>{status}</option>)}
+frontend/src/pages/InventoryManagement.tsx:                {filteredInventory.map((item, idx) => (
+frontend/src/pages/InventoryManagement.tsx:                {filteredLogs.map((log, idx) => (
+frontend/src/pages/InventoryManagement.tsx:                      {CATEGORIES(t).slice(1).map((cat: string) => <option key={cat} value={cat}>{cat}</option>)}
+frontend/src/pages/AdminDashboard.tsx:          {filteredNavItems.map(item => {
+frontend/src/pages/AdminDashboard.tsx:      setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
+frontend/src/pages/AdminDashboard.tsx:      setNotifications(prev => prev.map(n => ({ ...n, read: true })));
+frontend/src/pages/AdminDashboard.tsx:              {locations.map((loc, idx) => (
+frontend/src/pages/AdminDashboard.tsx:                    {(stats?.categorySales || []).map((entry: any, index: number) => (
+frontend/src/pages/AdminDashboard.tsx:              {(stats?.categorySales || []).map((cat: any, i: number) => (

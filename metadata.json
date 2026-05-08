@@ -1,0 +1,5 @@
+{
+  "name": "CafeDev",
+  "description": "A comprehensive cafe management system with customer menu, admin dashboard, staff portal, and inventory management.",
+  "requestFramePermissions": []
+}
